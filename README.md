@@ -46,10 +46,13 @@ THEN I am presented with empty fields to enter a new note title and the note’s
     Express-handlebars package:
     https://www.npmjs.com/package/express-handlebars
 
+    UUIDV4 id generator:
+    https://www.npmjs.com/package/uuidv4
+
 3. Open the cloned repository in Vscode or code editor of choice.
 
-## Usage
-bkcs
+## Deployed Application Link
+
 
 ## Credit
 N/A
