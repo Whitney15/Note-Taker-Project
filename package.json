@@ -1,19 +1,14 @@
 {
-  "dependencies": {
-    "express": "^4.18.2",
-    "uuidv4": "^6.2.13"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.22"
-  },
-  "scripts": {
-    "start": "node server.js"
-  },
-  "name": "note-taker-project",
-  "description": "",
+  "name": "note-taker",
   "version": "1.0.0",
+  "description": "",
   "main": "server.js",
-  "keywords": [],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
 }

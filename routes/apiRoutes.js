@@ -4,8 +4,12 @@ const fs = require("fs");
 
 // API route get request 
 router.get('/notes', function (req, res) {
-    const data = fs.readFileSync("./db/db.json");
-    res.json(JSON.parse(data));
+    fs.readFile("./db/db.json", "utf-8", function(error, data){
+        if(error)throw error
+        console.log(typeof(data))
+        res.json(JSON.parse(data));
+    });
+   
 });
 
 
@@ -18,6 +22,9 @@ router.post('/notes', (req, res) => {
         title: req.body.title,
         text: req.body.text,
     }
+    // calling old notes then pushing newNotes into the original Array notes.push(newNotes);
+    notes.push(newNotes); 
+    // overwriting the file with the new data to the old file
     fs.writeFileSync("./db/db.json", JSON.stringify(notes));
     res.json(notes);
 });
